@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <style>
+body {
+    
+    font-size: 20px;
+}
+
+.out {
+   
+   box-sizing: border-box;
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10px;
+   padding: 5px 5px 5px 5px;
+   color: white;
+   background-color: #d62828;
+   border: 1px solid black;
+   width: 100%;
+   border-radius: 2px;
+   text-align: center;
+   font-weight: bold;
+}
+.calc {
+    background-color: #ffe66d;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.display {
+    overflow-x: hidden;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #264db8;
+    border-radius: 2px;
+    min-height: 20px;
+    max-width: 100%;
+    background: #eae2b7;
+    margin: 2px 2px 20px 2px;
+}
+
+
+
+.button {
+    background-color:#f77f00;
+    width: 50px;
+    height: 50px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="page">
+<h1>Calculator</h1>
+
+<br />
+<form target="" method="post"> 
+<table class="calc" align="center">
+    
+    <tr>
+        <td colspan="2"><input type="text" name="x" value="{{X}}" class="display"></input></td>
+        <td colspan="2"><input type="text" name="y" value="{{Y}}" class="display"></input></td>
+    </tr>
+    <br/>
+    
+        <tr><td><input type="submit" name="fn" value="+" class="button" /></td></tr>
+        <tr><td><input type="submit" name="fn" value="-" class="button" /></td></tr>
+        <tr><td><input type="submit" name="fn" value="*" class="button" /></td></tr>
+        <tr><td><input type="submit" name="fn" value="/" class="button" /></td></tr>
+    
+    <tr align="center">
+        <td colspan="8"><div class="out">{{OUTPUT}}</div></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
